@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style media="screen">
+    body{ font-family: arial; }
+    input{ margin: 1em; padding: .5em;}
+    .logo img{ width: 150px; height: auto;}
+    </style>
+    <meta charset="utf-8">
+    <title><%= title %> is working!</title>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="img/sibi.png" alt="sibi logo">
+    </div>
+    <h3><%= title %> is working!</h3>
+    <br>
+    <h3>Create New User</h3>
+    <div>
+      <form action="/create" method="post">
+        <div>
+          <input type="text" name="Gender" placeholder="male/female" required>
+          <input type="text" name="NameSet" placeholder="Nationality" required>
+          <input type="text" name="Title" placeholder="Mr./Ms./Mrs." required>
+          <input type="text" name="GivenName" placeholder="First Name" required>
+          <input type="text" name="MiddleInitial" placeholder="Middle Name" required>
+          <input type="text" name="Surname" placeholder="Last Name" required>
+          <input type="text" name="StreetAddress" placeholder="Street Address" required>
+          <input type="text" name="City" placeholder="City" required>
+          <input type="text" name="State" placeholder="State Initial" required>
+          <input type="text" name="StateFull" placeholder="Full State Name" required>
+          <input type="number" name="ZipCode" placeholder="Zip Code" required>
+          <input type="text" name="Country" placeholder="Country Initial" required>
+          <input type="text" name="CountryFull" placeholder="Full Country Name" required>
+          <input type="email" name="EmailAddress" placeholder="Email" required>
+          <input type="text" name="Username" placeholder="Username" required>
+          <input type="password" name="Password" placeholder="Password" required>
+          <input type="text" name="BrowserUserAgent" placeholder="Browser User Agent" required>
+          <br>
+          <br>
+          Telephone Number:
+          <input type="number" name="TelephoneNumber" placeholder="(1112223333)" required>
+          <input type="number" name="TelephoneCountryCode" placeholder="Tel Country Code" required>
+          <input type="text" name="MothersMaiden" placeholder="Mother's Maiden Name" required>
+          Date of Birth:
+          <input type="date" name="Birthday" required>
+          <input type="number" name="age" placeholder="Age" required>
+          <input type="text" name="CCType" placeholder="Credit Card Type" required>
+          <input type="number" name="CCNumber" placeholder="Credit Card No" required>
+          <input type="number" name="CVV2" placeholder="CVV No" required>
+          <input type="text" name="CCExpires" placeholder="MM/YYYY" required>
+          <input type="text" name="NationalID" placeholder="National ID" required>
+          <input type="text" name="UPS" placeholder="UPS" required>
+          <input type="number" name="WesternUnionMTCN" placeholder="Western Union" required>
+          <input type="number" name="MoneyGramMTCN" placeholder=" Money Gram" required>
+          <input type="text" name="Color" placeholder="Color" required>
+          <input type="text" name="Occupation" placeholder="Occupation" required>
+          <input type="text" name="Company" placeholder="Company" required>
+          <input type="text" name="Vehicle" placeholder="Vehicle" required>
+          <input type="text" name="Domain" placeholder="Web URL" required>
+          <input type="text" name="GUID" placeholder="GUID" required>
+          <input type="text" name="Latitude" placeholder="Latitude" required>
+          <input type="text" name="Longitude" placeholder="Longitude" required>
+          <br>
+          <br>
+          <input type="submit" value="Create">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
